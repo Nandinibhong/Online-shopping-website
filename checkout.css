@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FEF3EA;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.head {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.jumbotron {
+    padding: 20px;
+    background: #e9ecef;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.jumbotron h6 {
+    margin: 10px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form .form-control,
+form textarea,
+form select,
+form .placeorderbtn {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form .form-control:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #007bff;
+}
+
+form .placeorderbtn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form .placeorderbtn:hover {
+    background-color: #218838;
+}

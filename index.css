@@ -1,0 +1,238 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #FEF3EA;
+}
+
+body {
+  background-color: #FEF3EA;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar img {
+  border-radius: 5rem;
+  margin-top: 2rem;
+  margin-left: 4rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar ul li {
+  position: relative;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.navbar ul li a {
+  color: rgb(125, 45, 82) ;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+.navbar ul li:after {
+  content: '';
+  height: 3px;
+  width: 0%;
+  background-color:  rgb(125, 45, 82);
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover:after {
+  width: 100%;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+.background {
+  background-image: url('naribg.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.para {
+  color: rgb(125, 45, 82);
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  background: transparent;
+}
+
+button {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 15px;
+  border: 0.2rem solid #FEF3EA;
+  font-weight: bold;
+  color: #FEF3EA;
+  cursor: pointer;
+  border-radius: 2rem;
+  background: transparent;
+  font-size: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+button span {
+  background: rgb(125, 45, 82);
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  border-radius: 2rem;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span {
+  width: 100%;
+}
+
+button:hover {
+  border: none;
+}
+
+.button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer {
+  background-color: black;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #000;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact,
+.footer-social {
+  width: 200px;
+  margin: 10px;
+  background-color: black;
+}
+
+.footer h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer p,
+.footer ul,
+.footer a {
+  font-size: 14px;
+  color: #555;
+  text-decoration: none;
+  line-height: 1.6;
+  background-color: black;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  background-color: #000;
+}
+
+.footer-links li {
+  margin-bottom: 5px;
+  background-color: #000;
+}
+
+.footer-social a {
+  margin: 0 5px;
+  color: #aaa7a7;
+}
+
+.footer-social a:hover {
+  color: #000;
+}
+
+.search-container {
+  position: relative;
+  width: 150px;
+  margin: 80px auto;
+}
+
+#search-bar {
+  width: 100%;
+  padding: 6px;
+  font-size: 16px;
+}
+
+#suggestions-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 200px;
+  max-height: 150px;
+  overflow-y: auto;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#suggestions-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+#suggestions-list li:hover {
+  background-color: #f0f0f0;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+@media (min-width: 600px) 
+{ body { font-size: 18px; }
+ }
+ @media (min-width: 1024px)
+  { 
+    body { font-size: 20px; } 
+}

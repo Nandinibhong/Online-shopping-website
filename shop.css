@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #FEF3EA;
+  padding: 4rem 8rem;
+  text-align: center;
+  overflow-x: hidden;
+  text-transform: capitalize;
+}
+
+.menu {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.menu a {
+  padding: 1.5rem;
+  background-color: rgb(125, 45, 82);
+  color: #FEF3EA;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  border: 1.7px solid transparent;
+  font-size: 1.2rem;
+  line-height: 1;
+  box-shadow: 10px 10px 10px rgba(45, 45, 51, 0.5);
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu a:hover,
+.menu a:focus {
+  background-color: rgb(125, 45, 82);
+  color: #FEF3EA;
+  box-shadow: 10px 10px 10px rgba(50, 50, 53, 0.7);
+}
+
+.shopping-cart {
+  position: relative;
+  padding: 10px;
+  color: #000;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 5px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  justify-content: space-between;
+  gap: 2rem;
+  display: inline-block;
+}
+
+.shopping-cart::before {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.shopping-cart span {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.shopping-cart .badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #f00;
+  color: #fff;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.shopping-cart:hover {
+  background-color: rgb(232, 182, 182);
+}
+
+.shopping-cart h5 {
+  color: #060606;
+}
+
+.shopping-cart img {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #f0e6da, #fff8f2);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.shopping-cart button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(125, 45, 82);
+  color: #FEF3EA;
+  text-decoration: none;
+  border-radius: 0.7rem;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.shopping-cart button:hover,
+.shopping-cart button:focus {
+  background-color: #582020;
+  color: #FEF3EA;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.shopping-cart button:active {
+  background-color: #5a1c1c;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+}
